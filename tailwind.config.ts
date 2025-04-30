@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -52,6 +53,16 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				gold: {
+					light: '#F0C75E',
+					DEFAULT: '#D4AF37',
+					dark: '#9C7C1D'
+				},
+				dark: {
+					light: '#2A2D3E',
+					DEFAULT: '#1A1D29',
+					darker: '#121420'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -70,25 +81,55 @@ export default {
 			},
 			keyframes: {
 				'accordion-down': {
-					from: {
-						height: '0'
-					},
-					to: {
-						height: 'var(--radix-accordion-content-height)'
-					}
+					from: { height: '0' },
+					to: { height: 'var(--radix-accordion-content-height)' }
 				},
 				'accordion-up': {
+					from: { height: 'var(--radix-accordion-content-height)' },
+					to: { height: '0' }
+				},
+				'pulse-gold': {
+					'0%, 100%': {
+						opacity: '1',
+						filter: 'drop-shadow(0 0 5px rgba(212, 175, 55, 0.7))'
+					},
+					'50%': {
+						opacity: '0.7',
+						filter: 'drop-shadow(0 0 15px rgba(212, 175, 55, 0.9))'
+					}
+				},
+				'float': {
+					'0%, 100%': {
+						transform: 'translateY(0px)'
+					},
+					'50%': {
+						transform: 'translateY(-10px)'
+					}
+				},
+				'background-shine': {
 					from: {
-						height: 'var(--radix-accordion-content-height)'
+						backgroundPosition: '200% 0'
 					},
 					to: {
-						height: '0'
+						backgroundPosition: '0% 0'
 					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'pulse-gold': 'pulse-gold 2s ease-in-out infinite',
+				'float': 'float 6s ease-in-out infinite',
+				'background-shine': 'background-shine 2s linear infinite'
+			},
+			boxShadow: {
+				'gold': '0 0 10px rgba(212, 175, 55, 0.5), 0 0 20px rgba(212, 175, 55, 0.3)',
+				'gold-lg': '0 0 15px rgba(212, 175, 55, 0.5), 0 0 30px rgba(212, 175, 55, 0.3), 0 0 45px rgba(212, 175, 55, 0.1)'
+			},
+			backgroundImage: {
+				'gold-gradient': 'linear-gradient(120deg, #D4AF37 0%, #F0C75E 50%, #9C7C1D 100%)',
+				'dark-gradient': 'linear-gradient(135deg, #1A1D29 0%, #2A2D3E 100%)',
+				'shine': 'linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,0) 100%)'
 			}
 		}
 	},
