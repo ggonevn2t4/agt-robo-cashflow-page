@@ -67,7 +67,7 @@ const TradingHistory = () => {
               </div>
               
               <div className="h-52 mt-6">
-                <ChartContainer config={{ data: { theme: { dark: '#3b82f6' } } }}>
+                <ChartContainer config={{ data: { theme: { light: '#3b82f6', dark: '#3b82f6' } } }}>
                   <AreaChart data={data}>
                     <defs>
                       <linearGradient id="colorPercent" x1="0" y1="0" x2="0" y2="1">
