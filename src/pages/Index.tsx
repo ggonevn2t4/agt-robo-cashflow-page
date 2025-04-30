@@ -8,6 +8,8 @@ import TestimonialsSection from "@/components/TestimonialsSection";
 import FeaturesList from "@/components/FeaturesList";
 import DemoSection from "@/components/DemoSection";
 import BotImage from "@/components/BotImage";
+import TradingHistory from "@/components/TradingHistory";
+import PerformanceStats from "@/components/PerformanceStats";
 
 const Index = () => {
   return (
@@ -23,8 +25,9 @@ const Index = () => {
       <div className="relative z-10">
         <Header />
         <BotImage />
-        {/* CentralVisual component removed */}
         <FeaturesList />
+        <TradingHistory />
+        <PerformanceStats />
         <StepsSection />
         <DemoSection />
         <TestimonialsSection />
