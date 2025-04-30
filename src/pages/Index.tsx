@@ -1,7 +1,6 @@
 
 import React from "react";
 import Header from "@/components/Header";
-import CentralVisual from "@/components/CentralVisual";
 import StepsSection from "@/components/StepsSection";
 import ContactSection from "@/components/ContactSection";
 import FAQSection from "@/components/FAQSection";
@@ -24,7 +23,7 @@ const Index = () => {
       <div className="relative z-10">
         <Header />
         <BotImage />
-        <CentralVisual />
+        {/* CentralVisual component removed */}
         <FeaturesList />
         <StepsSection />
         <DemoSection />
