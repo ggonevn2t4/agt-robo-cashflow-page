@@ -4,6 +4,12 @@ import Header from "@/components/Header";
 import CentralVisual from "@/components/CentralVisual";
 import StepsSection from "@/components/StepsSection";
 import ContactSection from "@/components/ContactSection";
+import FAQSection from "@/components/FAQSection";
+import TestimonialsSection from "@/components/TestimonialsSection";
+import PerformanceStats from "@/components/PerformanceStats";
+import FeaturesList from "@/components/FeaturesList";
+import PriceComparison from "@/components/PriceComparison";
+import DemoSection from "@/components/DemoSection";
 
 const Index = () => {
   return (
@@ -19,7 +25,13 @@ const Index = () => {
       <div className="relative z-10">
         <Header />
         <CentralVisual />
+        <PerformanceStats />
+        <FeaturesList />
         <StepsSection />
+        <PriceComparison />
+        <DemoSection />
+        <TestimonialsSection />
+        <FAQSection />
         <ContactSection />
       </div>
     </div>
