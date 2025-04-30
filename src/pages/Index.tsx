@@ -6,10 +6,9 @@ import StepsSection from "@/components/StepsSection";
 import ContactSection from "@/components/ContactSection";
 import FAQSection from "@/components/FAQSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
-import PerformanceStats from "@/components/PerformanceStats";
 import FeaturesList from "@/components/FeaturesList";
-import PriceComparison from "@/components/PriceComparison";
 import DemoSection from "@/components/DemoSection";
+import BotImage from "@/components/BotImage";
 
 const Index = () => {
   return (
@@ -24,11 +23,10 @@ const Index = () => {
       {/* Main content */}
       <div className="relative z-10">
         <Header />
+        <BotImage />
         <CentralVisual />
-        <PerformanceStats />
         <FeaturesList />
         <StepsSection />
-        <PriceComparison />
         <DemoSection />
         <TestimonialsSection />
         <FAQSection />

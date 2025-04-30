@@ -51,14 +51,6 @@ const PerformanceStats = () => {
             </Card>
           ))}
         </div>
-        
-        <div className="mt-16 max-w-3xl mx-auto bg-dark-light p-6 rounded-xl border border-gold/20">
-          <h3 className="text-xl font-bold mb-4 text-gold">Biểu Đồ Lợi Nhuận Hàng Tháng</h3>
-          <div className="bg-dark-darker p-4 rounded-lg border border-gold/10 h-[300px] flex items-center justify-center">
-            <p className="text-gray-400">Biểu đồ thống kê lợi nhuận AGT Bot</p>
-            {/* Replace this with a real chart component if you have data */}
-          </div>
-        </div>
       </div>
     </section>
   );

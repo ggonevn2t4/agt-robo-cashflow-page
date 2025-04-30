@@ -15,15 +15,16 @@ const DemoSection = () => {
         </div>
         
         <div className="max-w-4xl mx-auto">
-          {/* Video container */}
+          {/* YouTube video container */}
           <div className="relative aspect-video rounded-xl overflow-hidden border border-gold/30 mb-8">
-            <div className="absolute inset-0 bg-dark-darker flex items-center justify-center">
-              {/* Replace with actual video or live demo */}
-              <div className="text-center">
-                <Video className="h-16 w-16 text-gold mx-auto mb-4" />
-                <p className="text-gold-light text-xl">Video Demo AGT Bot</p>
-              </div>
-            </div>
+            <iframe 
+              className="absolute inset-0 w-full h-full"
+              src="https://www.youtube.com/embed/tF35UhD-fY0"
+              title="AGT Bot Demo Video" 
+              frameBorder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowFullScreen
+            ></iframe>
           </div>
           
           <div className="bg-dark-light border border-gold/20 rounded-xl p-6 text-center">
