@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { MessageCircle } from "lucide-react";
+import { MessageCircle, Facebook, Youtube } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const ContactSection = () => {
@@ -15,18 +15,46 @@ const ContactSection = () => {
             Liên Hệ Để Nhận Tư Vấn
           </h3>
           
-          <div className="flex items-center justify-center gap-4 mb-4">
-            <MessageCircle className="h-6 w-6 text-blue-400" />
-            <p className="text-xl text-gray-200">Zalo: 0708684608</p>
+          <div className="flex flex-col space-y-4 mb-6">
+            <div className="flex items-center justify-center gap-4">
+              <MessageCircle className="h-6 w-6 text-blue-400" />
+              <p className="text-xl text-gray-200">Zalo: 84708684608</p>
+            </div>
+            
+            <div className="flex items-center justify-center gap-4">
+              <Facebook className="h-6 w-6 text-blue-600" />
+              <p className="text-xl text-gray-200">Facebook</p>
+            </div>
+            
+            <div className="flex items-center justify-center gap-4">
+              <Youtube className="h-6 w-6 text-red-500" />
+              <p className="text-xl text-gray-200">YouTube</p>
+            </div>
           </div>
           
-          <div className="mt-6 text-center">
+          <div className="flex flex-col gap-3 mt-6">
             <Button 
               className="bg-blue-600 hover:bg-blue-700 text-white px-6"
-              onClick={() => window.open("https://zalo.me/0708684608", "_blank")}
+              onClick={() => window.open("https://zalo.me/84708684608", "_blank")}
             >
               <MessageCircle className="mr-2 h-5 w-5" />
-              Liên hệ ngay
+              Liên hệ qua Zalo
+            </Button>
+            
+            <Button 
+              className="bg-red-600 hover:bg-red-700 text-white px-6"
+              onClick={() => window.open("https://www.youtube.com/@AGT-Botintien", "_blank")}
+            >
+              <Youtube className="mr-2 h-5 w-5" />
+              Xem kênh YouTube
+            </Button>
+            
+            <Button 
+              className="bg-blue-700 hover:bg-blue-800 text-white px-6"
+              onClick={() => window.open("https://www.facebook.com/profile.php?id=61575792031945", "_blank")}
+            >
+              <Facebook className="mr-2 h-5 w-5" />
+              Fanpage Facebook
             </Button>
           </div>
           

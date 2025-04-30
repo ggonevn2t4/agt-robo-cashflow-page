@@ -36,7 +36,7 @@ const DemoSection = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
                 className="bg-gradient-to-r from-blue-600 to-blue-800 hover:bg-blue-700 text-white font-medium py-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
-                onClick={() => window.open("https://zalo.me/0708684608", "_blank")}
+                onClick={() => window.open("https://zalo.me/84708684608", "_blank")}
               >
                 <Video className="mr-2 h-5 w-5" />
                 Nhận Demo Qua Zalo
@@ -45,6 +45,7 @@ const DemoSection = () => {
               <Button 
                 variant="outline" 
                 className="border-gold text-gold hover:bg-gold hover:text-dark-darker font-medium py-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                onClick={() => window.open("https://www.youtube.com/@AGT-Botintien", "_blank")}
               >
                 Xem Hướng Dẫn
               </Button>

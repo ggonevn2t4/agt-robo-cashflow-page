@@ -24,7 +24,7 @@ const Header = () => {
         <Button 
           variant="default" 
           className="bg-gradient-to-r from-blue-600 to-blue-800 hover:bg-blue-700 text-white font-medium py-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 min-w-[200px]"
-          onClick={() => window.open("https://zalo.me/0708684608", "_blank")}
+          onClick={() => window.open("https://zalo.me/84708684608", "_blank")}
         >
           <MessageCircle className="mr-2 h-5 w-5" />
           Nhận miễn phí qua Zalo
@@ -33,7 +33,7 @@ const Header = () => {
         <Button 
           variant="default" 
           className="bg-gradient-to-r from-blue-400 to-blue-600 hover:bg-blue-500 text-white font-medium py-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 min-w-[200px]"
-          onClick={() => window.open("https://t.me/agtbot", "_blank")}
+          onClick={() => window.open("https://t.me/gangstersjay", "_blank")}
         >
           <Send className="mr-2 h-5 w-5" />
           Nhận qua Telegram
